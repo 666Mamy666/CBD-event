@@ -1,0 +1,42 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &__logo {
+    flex-shrink: 0;
+    color: #DA9D27;
+    font-family: Nunito;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 48px;
+  }
+  &__text{
+    color: #A76E00;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 18px;
+  }
+  &__btn{
+    display: flex;
+padding: 10px 7px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 4px;
+border: 1px solid #A76E00;
+background-color: transparent;
+  }
+  &__icon{
+    width: 40.7px;
+height: 40.0px;
+padding: 10px 7px;
+  }
+  &__svg{
+stroke: #A76E00;
+
+  }
+}
