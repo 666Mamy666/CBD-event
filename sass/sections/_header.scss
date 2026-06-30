@@ -1,42 +1,186 @@
+@use "../base/var" as *;
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
 
+  @media screen and (min-width: 724px) {
+    padding-top: 9px;
+    padding-bottom: 8px;
+  }
+  @media screen and (min-width: 1380px) {
+    padding-top: 14px;
+    padding-bottom: 52px;
+    background-color: $text-color;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
   &__logo {
     flex-shrink: 0;
-    color: #DA9D27;
+    color: $logo-color;
     font-family: Nunito;
     font-size: 40px;
     font-style: normal;
     font-weight: 800;
     line-height: 48px;
-  }
-  &__text{
-    color: #A76E00;
-font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 700;
-line-height: 18px;
-  }
-  &__btn{
-    display: flex;
-padding: 10px 7px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 8px;
-border-radius: 4px;
-border: 1px solid #A76E00;
-background-color: transparent;
-  }
-  &__icon{
-    width: 40.7px;
-height: 40.0px;
-padding: 10px 7px;
-  }
-  &__svg{
-stroke: #A76E00;
 
+    @media screen and (min-width: 724px) {
+      font-size: 56px;
+      line-height: 64px;
+    }
+  }
+  &__container {
+
+    @media screen and (min-width: 1380px) {
+        display: flex;
+      flex-direction: column;
+    }
+  }
+  &__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @media screen and (min-width: 724px) {
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 1380px) {
+    gap: 131px;
+    margin-bottom: 37px;
+  }
+}
+  &__group {
+    display: none;
+
+    @media screen and (min-width: 1380px) {
+      display: flex;
+      gap: 128px;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 8px;
+  }
+  &__vec-icon {
+    width: 24px;
+    height: 24px;
+  }
+  &__use {
+    fill: $svg-color;
+  }
+  &__item-list {
+    display: flex;
+    gap: 128px;
+  }
+  &__desc {
+    color: $decorative-color;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  &__text-mobile {
+    color: $decorative-color;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    display: block;
+
+    @media screen and (min-width: 724px) {
+      display: none;
+    }
+  }
+  &__text {
+    display: none;
+
+    @media screen and (min-width: 724px) {
+      color: $decorative-color;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      display: block;
+    }
+    @media screen and (min-width: 1380px) {
+      margin-top: 18px;
+    }
+  }
+  &__block {
+    display: none;
+
+    @media screen and (min-width: 1380px) {
+      display: flex;
+      gap: 32px;
+      justify-content: baseline;
+      padding-top: 17px;
+      border-top: 2px solid $background-color;
+    }
+  }
+  &__nav-list {
+    display: flex;
+    gap: 40px;
+  }
+  &__link {
+    color: $decorative-color;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  &__form-input {
+    color: $background-color;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid $background-color;
+    width: 174px;
+    height: 40px;
+    padding: 8px 40px 8px 8px;
+    background-color: transparent;
+  }
+  &__form-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+  }
+  &__form-svg {
+    fill: $svg-color;
+  }
+  &__btn {
+    display: flex;
+    padding: 10px 7px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border: 1px solid $decorative-color;
+    background-color: transparent;
+
+    @media screen and (min-width: 1380px) {
+      display: none;
+    }
+  }
+  &__icon {
+    width: 26.7px;
+    height: 20px;
+  }
+  &__svg {
+    stroke: $decorative-color;
   }
 }
