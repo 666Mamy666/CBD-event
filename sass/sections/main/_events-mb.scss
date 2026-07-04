@@ -1,0 +1,51 @@
+@use "../../base/var" as *;
+.events-mb {
+  padding-top: 40px;
+  padding-bottom: 48px;
+
+    @media screen and (min-width: 724px) {
+    display: none;
+    }
+
+  &__title {
+    color: var(--gold-text, #a76e00);
+    font-family: "Montserrat Alternates";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--grey-fon, #979797);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+  }
+  &__btn {
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--white-fon, #f8f1e9);
+    flex-shrink: 0;
+    color: var(--green-text, #04867e);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    width: 343.0px;
+height: 42.0px;
+padding: 12px;
+border: none;
+  }
+}

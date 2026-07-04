@@ -3,14 +3,18 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
+
   @media screen and (min-width: 724px) {
     padding-top: 9px;
     padding-bottom: 8px;
   }
   @media screen and (min-width: 1380px) {
     padding-top: 14px;
-    padding-bottom: 52px;
+    padding-bottom: 40px;
     background-color: $text-color;
+    position: fixed;
+    width: 100%;
+    background-color: $gradient;
   }
   &__box {
     display: flex;
@@ -145,7 +149,8 @@
     line-height: 22px;
     align-items: center;
     border-radius: 4px;
-    border: 1px solid $background-color;
+    outline: 1px solid $background-color;
+    border: none;
     width: 174px;
     height: 40px;
     padding: 8px 40px 8px 8px;
