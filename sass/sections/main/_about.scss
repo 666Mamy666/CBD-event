@@ -1,6 +1,7 @@
 @use "../../base/var" as *;
 .about {
   padding-bottom: 48px;
+  display: none;
 
   @media screen and (min-width: 724px) {
     padding-top: 64px;
