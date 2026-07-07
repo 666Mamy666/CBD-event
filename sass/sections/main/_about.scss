@@ -67,14 +67,14 @@
     }
   }
   &__title {
-    color: var(--gold-text, #a76e00);
+    color: $decorative-color;
     font-family: "Montserrat Alternates";
     font-size: 30px;
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
     max-width: 160px;
-    border-top: 2px solid #a76e00;
+    border-top: 2px solid $decorative-color;
     padding-top: 48px;
 
     @media screen and (min-width: 724px) {
@@ -95,7 +95,7 @@
 
     @media screen and (min-width: 724px) {
       display: block;
-      color: var(--black-text, #3d3c39);
+      color: $text-color;
       font-family: Montserrat;
       font-size: 14px;
       font-style: normal;
@@ -124,7 +124,7 @@
         display: block;
        width: 95px;
     height: 2px;
-    background: #A76E00;
+    background: $decorative-color;
     }
   }
   &__text-deckstop {
@@ -132,7 +132,7 @@
 
     @media screen and (min-width: 1380px) {
       display: block;
-      color: var(--black-text, #3d3c39);
+      color:  $text-color;
       font-family: Montserrat;
       font-size: 20px;
       font-style: normal;
@@ -154,12 +154,12 @@ display: none;
     align-items: center;
     gap: 8px;
     border-radius: 4px;
-    border-bottom: 1px solid var(--black-text, #3d3c39);
+    border-bottom: 1px solid $text-color;
     border-top: none;
     border-left: none;
     border-right: none;
-    background: var(--white-text, #fdfdfd);
-    color: var(--green-text, #04867e);
+    background: $svg-color;
+    color: $btn-color2;
     font-family: Montserrat;
     font-size: 18px;
     font-style: normal;
@@ -182,7 +182,7 @@ display: none;
   }
 
   &__subtext {
-    color: var(--blue-information, #3e1063);
+    color: $text-card-color;
     font-family: "Roboto Condensed";
     font-size: 12px;
     font-style: normal;
@@ -208,8 +208,8 @@ display: none;
     align-items: center;
     gap: 8px;
     border-radius: 4px;
-    background: var(--white-fon, #f8f1e9);
-    color: var(--green-text, #04867e);
+    background: $btn-color;
+    color: $btn-color2;
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
@@ -229,7 +229,7 @@ display: none;
       align-items: center;
       gap: 8px;
       border-radius: 4px;
-      border: 1px solid var(--black-text, #3d3c39);
+      border: 1px solid $text-color;
       background-color: transparent;
       flex-shrink: 0;
       font-size: 16px;
@@ -250,7 +250,7 @@ display: none;
   &__text {
     -webkit-box-orient: vertical;
     overflow: hidden;
-    color: var(--black-text, #3d3c39);
+    color: $text-color;
     text-overflow: ellipsis;
     font-family: Montserrat;
     font-size: 14px;
@@ -271,8 +271,8 @@ display: none;
     align-items: center;
     gap: 8px;
     border-radius: 4px;
-    background: var(--white-fon, #f8f1e9);
-    color: var(--green-text, #04867e);
+    background: $btn-color;
+    color: $btn-color2;
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;

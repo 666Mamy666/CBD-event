@@ -26,7 +26,7 @@
     }
   }
   &__title {
-    color: var(--white-text, #fdfdfd);
+    color: $svg-color;
     font-family: "Montserrat Alternates";
     font-size: 30px;
     font-style: normal;
@@ -52,7 +52,7 @@
   &__line {
     width: 384px;
     height: 2px;
-    background: var(--white-text, #fdfdfd);
+    background: $svg-color;
     display: none;
 
     @media screen and (min-width: 1380px) {
@@ -85,7 +85,7 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 8px;
-    background: var(--white-fon, #f8f1e9);
+    background: $btn-color;
 
     @media screen and (min-width: 724px) {
       width: 316px;
@@ -118,7 +118,7 @@
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
-    color: var(--gold-text, #a76e00);
+    color: $decorative-color;
     font-family: "Montserrat Alternates";
     font-size: 30px;
     font-style: normal;
@@ -139,7 +139,7 @@
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
-    color: var(--gold-text, #a76e00);
+    color: $decorative-color;
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
@@ -157,7 +157,7 @@
     }
   }
   &__subtext {
-    color: var(--black-text, #3d3c39);
+    color: $text-color;
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
@@ -190,9 +190,9 @@
   }
   &__svg {
     flex-shrink: 0;
-    fill: var(--white-text, #fdfdfd);
+    fill: $svg-color;
     stroke-width: 1px;
-    stroke: var(--gold-text, #a76e00);
+    stroke: $decorative-color;
   }
   &__img {
     width: 431px;
