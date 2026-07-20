@@ -12,9 +12,10 @@
     padding-top: 14px;
     padding-bottom: 40px;
     background-color: $text-color;
-    position: fixed;
+    position: absolute;
     width: 100%;
-    background-color: $gradient;
+    z-index: 3;
+    background-color: transparent;
   }
   &__box {
     display: flex;
