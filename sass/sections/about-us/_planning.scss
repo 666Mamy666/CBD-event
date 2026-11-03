@@ -1,0 +1,207 @@
+.planning {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: var(--grey-fon, #979797);
+
+  @media screen and (min-width: 724px) {
+    padding-top: 80px;
+  }
+  @media screen and (min-width: 1380px) {
+    padding-top: 100px;
+  }
+  &__container {
+    position: relative;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  &__line {
+    width: 449px;
+    height: 2px;
+    display: none;
+    background: var(--white-fon, #f8f1e9);
+    @media screen and (min-width: 1380px) {
+      display: block;
+      position: relative;
+      z-index: 2;
+    }
+  }
+  &__title {
+    color: var(--grey-20, #f4e2e2);
+    font-family: "Montserrat Alternates";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    max-width: 257px;
+    position: relative;
+    z-index: 2;
+    @media screen and (min-width: 724px) {
+      font-size: 40px;
+      line-height: 48px;
+      color: var(--white-fon, #f8f1e9);
+      max-width: 636px;
+    }
+    @media screen and (min-width: 1380px) {
+      font-size: 56px;
+      line-height: 64px;
+      max-width: 871px;
+    }
+  }
+  &__wrapper {
+    @media screen and (min-width: 724px) {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-top: 16px;
+      gap: 16px;
+    }
+    @media screen and (min-width: 1380px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 256px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 2;
+
+    @media screen and (min-width: 724px) {
+      margin-right: 0;
+      max-width: 293px;
+    }
+    @media screen and (min-width: 1380px) {
+      flex-direction: row-reverse;
+      margin-right: auto;
+      margin-left: 0;
+      margin-top: 37px;
+      max-width: 350px;
+      gap: 8px;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    border-radius: 8px;
+    border: 2px solid var(--white-fon, #f8f1e9);
+    opacity: 0.8;
+    width: 120px;
+    height: 120px;
+
+    @media screen and (min-width: 724px) {
+      background: var(--white-fon, #f8f1e9);
+      border: none;
+      width: 111px;
+      height: 94px;
+      padding: 8px;
+
+      &:nth-child(1) {
+        width: 174px;
+      }
+      &:nth-child(2) {
+        position: relative;
+        bottom: 105px;
+      }
+    }
+    @media screen and (min-width: 1380px) {
+      width: 145px;
+      height: 113px;
+
+      &:nth-child(1) {
+        width: 200px;
+        height: 113px;
+      }
+      &:nth-child(2) {
+        bottom: 120px;
+      }
+    }
+  }
+  &__text {
+    color: var(--yellow-80, #a76e00);
+    font-size: 35px;
+    line-height: 15px;
+    font-weight: 500;
+    font-family: "Montserrat Alternates";
+
+    @media screen and (min-width: 724px) {
+      font-size: 40px;
+      line-height: 25px;
+    }
+    @media screen and (min-width: 1380px) {
+      font-size: 56px;
+      line-height: 35px;
+    }
+  }
+
+  &__span {
+    flex-shrink: 0;
+    color: var(--green-footer, #16392d);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+
+    @media screen and (min-width: 724px) {
+      color: #3e1063;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 500;
+    }
+    @media screen and (min-width: 1380px) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  &__description {
+    color: var(--purple-100, #3e1063);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    max-width: 250px;
+
+    @media screen and (min-width: 724px) {
+      font-size: 14px;
+      max-width: 341px;
+    }
+    @media screen and (min-width: 1380px) {
+      line-height: 18px;
+      font-size: 16px;
+      max-width: 590px;
+    }
+  }
+  &__image {
+    width: 240px;
+    height: 180px;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: 1;
+    display: block;
+    @media screen and (min-width: 724px) {
+      display: none;
+    }
+    @media screen and (min-width: 1380px) {
+      width: 504px;
+      height: 432px;
+      display: block;
+      top:-45px;
+      left: -20px;
+    }
+  }
+}
