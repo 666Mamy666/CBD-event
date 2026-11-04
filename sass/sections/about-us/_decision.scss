@@ -1,0 +1,215 @@
+.decision {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @media screen and (min-width: 724px) {
+    padding-top: 84px;
+  }
+  @media screen and (min-width: 1380px) {
+    padding-top: 108px;
+  }
+
+  &__wrapper {
+    @media screen and (min-width: 1380px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
+
+  &__title {
+    color: var(--yellow-80, #a76e00);
+    font-family: "Montserrat Alternates";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+
+    @media screen and (min-width: 724px) {
+      line-height: 48px;
+      font-size: 40px;
+      max-width: 525px;
+      margin-left: auto;
+    }
+    @media screen and (min-width: 1380px) {
+      font-size: 56px;
+      line-height: 64px;
+      margin-left: 0;
+      max-width: 734px;
+    }
+  }
+  &__br {
+    display: none;
+
+    @media screen and (min-width: 724px) {
+      display: block;
+    }
+  }
+  &__line-title {
+    width: 570px;
+    height: 2px;
+    background: var(--gold-text, #a76e00);
+    display: none;
+
+    @media screen and (min-width: 1380px) {
+      display: block;
+    }
+  }
+  &__block {
+    @media screen and (min-width: 724px) {
+      display: flex;
+      gap: 20px;
+      margin-top: 24px;
+      justify-content: baseline;
+
+      @media screen and (min-width: 1380px) {
+        flex-direction: row-reverse;
+        gap: 80px;
+        margin-top: 32px;
+        align-items: center;
+      }
+    }
+  }
+  &__box {
+    display: flex;
+    align-items: end;
+    margin-top: 16px;
+    margin-bottom: 26px;
+    gap: 17px;
+
+    @media screen and (min-width: 724px) {
+      flex-direction: column;
+      align-items: baseline;
+      margin-top: 0;
+      gap: 24px;
+    }
+
+    @media screen and (min-width: 1380px) {
+      flex-direction: column-reverse;
+    }
+  }
+  &__image {
+    width: 190px;
+    height: 160px;
+
+    @media screen and (min-width: 724px) {
+      width: 290px;
+      height: 220px;
+    }
+    @media screen and (min-width: 1380px) {
+      width: 550px;
+      height: 600px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 164px;
+
+    @media screen and (min-width: 724px) {
+      gap: 8px;
+      max-width: 380px;
+    }
+    @media screen and (min-width: 1380px) {
+      gap: 16px;
+      max-width: 546px;
+    }
+  }
+  &__link {
+    color: var(--gold-logo, #da9d27);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+
+    @media screen and (min-width: 724px) {
+      font-size: 16px;
+      max-width: 322px;
+      white-space: nowrap;
+    }
+    @media screen and (min-width: 1380px) {
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+  &__br-deckstop {
+    display: block;
+
+    @media screen and (min-width: 1380px) {
+      display: none;
+    }
+  }
+  &__line {
+    width: 2px;
+    height: 360px;
+    background: #a76e00;
+    display: none;
+
+    @media screen and (min-width: 724px) {
+      display: block;
+    }
+    @media screen and (min-width: 1380px) {
+      display: none;
+    }
+  }
+  &__text-tablet {
+    color: var(--black-text, #3d3c39);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    display: none;
+    max-width: 341px;
+
+    @media screen and (min-width: 724px) {
+      display: block;
+    }
+    @media screen and (min-width: 1380px) {
+      font-size: 20px;
+      line-height: 32px;
+      max-width: 730px;
+    }
+  }
+  &__description {
+    color: var(--black-text, #3d3c39);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 327px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: 724px) {
+      display: none;
+    }
+  }
+  &__button {
+    width: 100%;
+    height: 42px;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--white-fon, #f8f1e9);
+    flex-shrink: 0;
+    color: var(--green-text, #04867e);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    border: none;
+
+    @media screen and (min-width: 724px) {
+      display: none;
+    }
+  }
+}
