@@ -401,7 +401,10 @@
         </section>
         <section class="team">
             <div class="container">
-                <h3 class="team__title">Наша команда</h3>
+                <div class="team__block">
+                    <h3 class="team__title">Наша команда</h3>
+                    <div class="team__line"></div>
+                </div>
                 <ul class="team__list">
                     <li class="team__item">
                         <div class="team__box">
@@ -426,9 +429,19 @@
                                 <li class="team__position">Головний планувальник</li>
                             </ul>
                         </div>
+                        <p class="team__text-deckstop">Айві Пендлтон — креативний директор і головний планувальник...
+                        </p>
+                        <p class="team__text">Айві Пендлтон — креативний директор і головний плану.</p>
                         <button class="team__button" type="button">Детальніше</button>
+                        <ul class="team__sublist">
+                            <li class="team__subitem">
+                                <p class="team__text-tablet">Айві К. Пендлтон</p>
+                            </li>
+                            <li class="team__subitem">
+                                <p class="team__text-tablet">Головний планувальник</p>
+                            </li>
+                        </ul>
                     </li>
-
                     <li class="team__item">
                         <div class="team__box">
                             <picture class="team__picture">
@@ -452,7 +465,18 @@
                                 <li class="team__position">Спеціаліст з логістики</li>
                             </ul>
                         </div>
+                        <p class="team__text-deckstop">Камарія Салау є старшим спеціалістом з логістики в CBD. Вона
+                            тісно співпрацю...</p>
+                        <p class="team__text">Камарія Салау є старшим спеціалістом з логістики в CBD.</p>
                         <button class="team__button" type="button">Детальніше</button>
+                        <ul class="team__sublist">
+                            <li class="team__subitem">
+                                <p class="team__text-tablet">Камарія Салау</p>
+                            </li>
+                            <li class="team__subitem">
+                                <p class="team__text-tablet">Спеціаліст з логістики</p>
+                            </li>
+                        </ul>
                     </li>
 
                     <li class="team__item">
@@ -478,15 +502,26 @@
                                 <li class="team__position">Спеціаліст з логістики</li>
                             </ul>
                         </div>
+                        <p class="team__text-deckstop">Майкл — досвідчений фахівець з логістики, який працює в CBD з
+                            2007 року...</p>
+                        <p class="team__text">Майкл — досвідчений фахівець з логістики, який працює в CBD</p>
                         <button class="team__button" type="button">Детальніше</button>
+                        <ul class="team__sublist">
+                            <li class="team__subitem">
+                                <p class="team__text-tablet">Майкл Дюбуа</p>
+                            </li>
+                            <li class="team__subitem">
+                                <p class="team__text-tablet">Спеціаліст з логістики</p>
+                            </li>
+                        </ul>
                     </li>
 
                     <li class="team__item">
                         <div class="team__box">
                             <picture class="team__picture">
                                 <source media="(min-width: 1380px)" srcset="
-                        ./img/deckstop/glass-deckstop@1x.webp 1x,
-                        ./img/deckstop/glass-deckstop@2x.webp 2x
+                        ./img/deckstop/gregori-deckstop@1x.webp 1x,
+                        ./img/deckstop/gregori-deckstop@2x.webp 2x
                     ">
                                 <source media="(min-width: 724px)" srcset="
                         ./img/tablet/gregori-tablet@1x.webp 1x,
@@ -504,7 +539,18 @@
                                 <li class="team__position">Офіційний фотограф</li>
                             </ul>
                         </div>
+                        <p class="team__text-deckstop">Грегорі Блейкі — найкращий фотограф у Вашингтоні, округ
+                            Колумбія...</p>
+                        <p class="team__text">Грегорі Блейкі — найкращий фотограф у Вашингтоні, окркор</p>
                         <button class="team__button" type="button">Детальніше</button>
+                        <ul class="team__sublist">
+                            <li class="team__subitem">
+                                <p class="team__text-tablet">Грегорі Блейкі</p>
+                            </li>
+                            <li class="team__subitem">
+                                <p class="team__text-tablet">Офіційний фотограф</p>
+                            </li>
+                        </ul>
                     </li>
 
                     <li class="team__item">
@@ -530,9 +576,113 @@
                                 <li class="team__position">Головний відеооператор</li>
                             </ul>
                         </div>
+                        <p class="team__text-deckstop">Ми працюємо виключно з лауреатом нагород оператором Маршаллом
+                            Л...</p>
+                        <p class="team__text">Ми працюємо виключно з лауреатом нагород оператором...</p>
                         <button class="team__button" type="button">Детальніше</button>
+                        <ul class="team__sublist">
+                            <li class="team__subitem">
+                                <p class="team__text-tablet">Маршалл Леві</p>
+                            </li>
+                            <li class="team__subitem">
+                                <p class="team__text-tablet">Головний відеооператор</p>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
+            </div>
+        </section>
+        <section class="work">
+            <div class="container work__container">
+                <div class="work__box">
+                    <div class="work__line"></div>
+                    <h3 class="work__title">Ми хочемо з вами працювати</h3>
+                </div>
+                <p class="work__text">Будь ласка, заповніть форму, щоб наша команда могла оцінити ваші потреби.</p>
+                <button class="work__btn" type="button">Ознайомитися</button>
+                <picture class="work__image">
+                    <source media="(min-width: 1380px)" srcset="
+                                            ./img/deckstop/work-deckstop@1x.webp 1x,
+                                            ./img/deckstop/work-deckstop@2x.webp 2x
+                                        ">
+                    <source media="(min-width: 724px)" srcset="
+                                            ./img/tablet/marshall-tablet@1x.webp 1x,
+                                            ./img/tablet/marshall-tablet@2x.webp 2x
+                                        ">
+                    <source media="(max-width: 723px)" srcset="
+                                            ./img/mobile/marshall-mobile@1x.webp 1x,
+                                            ./img/mobile/marshall-mobile@2x.webp 2x
+                                        ">
+                    <img class="work__image" src="./img/deckstop/work-deckstop@1x.webp" alt="moon">
+                </picture>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="reviews__container">
+                <h3 class="reviews__title">Відгуки</h3>
+                <ul class="reviews__list">
+                    <li class="reviews__item">
+                        <picture class="reviews__picture">
+                            <source media="(min-width: 1380px)" srcset="
+                                    ./img/deckstop/gregori-deckstop@1x.webp 1x,
+                                    ./img/deckstop/gregori-deckstop@2x.webp 2x
+                                ">
+                            <source media="(min-width: 724px)" srcset="
+                                    ./img/tablet/gregori-tablet@1x.webp 1x,
+                                    ./img/tablet/gregori-tablet@2x.webp 2x
+                                ">
+                            <source media="(max-width: 723px)" srcset="
+                                    ./img/mobile/gregori-mobile@1x.webp 1x,
+                                    ./img/mobile/gregori-mobile@2x.webp 2x
+                                ">
+                            <img class="reviews__image" src="./img/mobile/gregori-mobile@1x.webp" alt="Грегорі">
+                        </picture>
+        
+                        <div class="reviews__content">
+                            <p class="reviews__text">
+                                Команда виконала фантастичну роботу для приватного сектору Світового банку семінари з розвитку
+                                консолідації центрального
+                                банку. Ми в Африці, тому ми могли довірити їм усі деталі.
+                            </p>
+                            <p class="reviews__author">
+                                Маллам Санусі Ламідо Санусі, губернатор Центрального банку Нігерії
+                            </p>
+                        </div>
+                    </li>
+        
+                    <li class="reviews__item">
+                        <div class="reviews__content">
+                            <p class="reviews__text">
+                                Айві займалася зв'язками з громадськістю та комунікаціями для історичного Sojourner Truth
+                                Unveiling з першою леді Мішель
+                                Обамою. Вона та її команда надзвичайно вразили.
+                            </p>
+                            <p class="reviews__author">
+                                Д-р Е. Фей Вільямс, Національний голова NCBW
+                            </p>
+                        </div>
+        
+                        <picture class="reviews__picture">
+                            <source media="(min-width: 1380px)" srcset="
+                                    ./img/deckstop/gregori-deckstop@1x.webp 1x,
+                                    ./img/deckstop/gregori-deckstop@2x.webp 2x
+                                ">
+                            <source media="(min-width: 724px)" srcset="
+                                    ./img/tablet/gregori-tablet@1x.webp 1x,
+                                    ./img/tablet/gregori-tablet@2x.webp 2x
+                                ">
+                            <source media="(max-width: 723px)" srcset="
+                                    ./img/mobile/gregori-mobile@1x.webp 1x,
+                                    ./img/mobile/gregori-mobile@2x.webp 2x
+                                ">
+                            <img class="reviews__image" src="./img/mobile/gregori-mobile@1x.webp" alt="Грегорі">
+                        </picture>
+                    </li>
+                </ul>
+        
+                <button class="reviews__button" type="button">
+                    Детальніше
+                </button>
             </div>
         </section>
     </main>
