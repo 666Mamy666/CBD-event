@@ -1,0 +1,119 @@
+.prices {
+  padding-top: 40px;
+  padding-bottom: 120px;
+  background-color: var(--grey-fon, #979797);
+
+  @media screen and (min-width: 724px) {
+    padding-top: 80px;
+    padding-bottom: 160px;
+  }
+  @media screen and (min-width: 1380px) {
+    padding-top: 128px;
+    padding-bottom: 200px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__item {
+    display: flex;
+    padding: 16px 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 16px;
+    border: 1px solid var(--grey-fon, #979797);
+    background: var(--white-fon, #f8f1e9);
+    width: 100%;
+    height: 188px;
+
+    @media screen and (min-width: 724px) {
+      width: 660px;
+      height: 288px;
+      border: 1px solid var(--grey-20, #f4e2e2);
+      flex-direction: row;
+    }
+  }
+  &__header {
+    display: flex;
+    align-items: end;
+    max-width: 343px;
+    width: 100%;
+    justify-content: space-between;
+
+    @media screen and (min-width: 724px) {
+      flex-direction: column;
+    }
+  }
+  &__title {
+    color: var(--green-footer, #16392d);
+    font-family: "Montserrat Alternates";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+  }
+  &__price {
+    color: var(--yellow-80, #a76e00);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    max-width: 139px;
+    margin-left: auto;
+  }
+  &__content {
+    display: none;
+
+    @media screen and (min-width: 724px) {
+      display: block;
+    }
+  }
+  &__button {
+    width: 100%;
+    height: 42px;
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--white-fon, #f8f1e9);
+    flex-shrink: 0;
+    color: var(--green-text, #04867e);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 724px) {
+      display: none;
+    }
+  }
+  &__button-buy {
+    width: 100%;
+    height: 42px;
+    display: flex;
+    padding: 12px 131px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--green-text, #04867e);
+    color: var(--white-fon, #f8f1e9);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    border: none;
+    white-space: nowrap;
+  }
+}

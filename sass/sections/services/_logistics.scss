@@ -1,0 +1,105 @@
+.logistics {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  @media screen and (min-width: 724px) {
+    padding-top: 30px;
+  }
+  @media screen and (min-width: 1380px) {
+    padding-top: 108px;
+  }
+  &__box {
+    @media screen and (min-width: 1380px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+  &__line {
+    display: none;
+
+    @media screen and (min-width: 1380px) {
+      display: block;
+      width: 589px;
+      height: 2px;
+      background: var(--gold-text, #a76e00);
+    }
+  }
+
+  &__title {
+    color: var(--yellow-80, #a76e00);
+    font-family: "Montserrat Alternates";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+
+    @media screen and (min-width: 724px) {
+      font-size: 40px;
+      line-height: 48px;
+    }
+    @media screen and (min-width: 1380px) {
+      font-size: 56px;
+      line-height: 64px;
+    }
+  }
+  &__text {
+    color: var(--black-text, #3d3c39);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    max-width: 299px;
+    margin-top: 8px;
+    margin-bottom: 26px;
+
+    @media screen and (min-width: 724px) {
+      font-size: 14px;
+      max-width: 523px;
+      margin-top: 16px;
+      margin-bottom: 8px;
+    }
+    @media screen and (min-width: 1380px) {
+      font-size: 20px;
+      line-height: 32px;
+      max-width: 784px;
+      margin-left: auto;
+    }
+  }
+  &__btn {
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    border-radius: 4px;
+    background: var(--white-fon, #f8f1e9);
+    width: 100%;
+    height: 42px;
+    flex-shrink: 0;
+    color: var(--green-text, #04867e);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    border: none;
+
+    @media screen and (min-width: 724px) {
+      width: 200px;
+      background: var(--white-text, #fdfdfd);
+      border-bottom: 1px solid var(--black-text, #3d3c39);
+      font-size: 16px;
+      margin-left: auto;
+    }
+    @media screen and (min-width: 1380px) {
+      margin: 0;
+      width: 240px;
+      padding: 10px 16px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}
