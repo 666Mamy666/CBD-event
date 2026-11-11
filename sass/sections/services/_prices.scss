@@ -34,6 +34,8 @@
       height: 288px;
       border: 1px solid var(--grey-20, #f4e2e2);
       flex-direction: row;
+      border-radius: 8px;
+      gap: 20px;
     }
   }
   &__header {
@@ -45,6 +47,7 @@
 
     @media screen and (min-width: 724px) {
       flex-direction: column;
+      max-width: 198px;
     }
   }
   &__title {
@@ -65,12 +68,34 @@
     max-width: 139px;
     margin-left: auto;
   }
+  &__features {
+    display: flex;
+    gap: 8px;
+  }
   &__content {
     display: none;
 
     @media screen and (min-width: 724px) {
       display: block;
+      max-width: 290px;
+      flex-direction: column;
     }
+  }
+  &__subtitle {
+    color: var(--gold-logo, #da9d27);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  &__feature-text {
+    color: var(--black-text, #3d3c39);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
   }
   &__button {
     width: 100%;
@@ -115,5 +140,15 @@
     line-height: 18px;
     border: none;
     white-space: nowrap;
+
+    @media screen and (min-width: 724px) {
+      width: 120px;
+      height: 42px;
+      padding: 12px 20px;
+      background: var(--grey-button, #fdfdfd);
+      border: 1.5px solid var(--green-footer, #16392d);
+      font-size: 16px;
+      color: var(--green-100, #04867e);
+    }
   }
 }
