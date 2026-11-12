@@ -5678,122 +5678,94 @@ img {
 }
 
 .portfolio {
-  padding-top: 48px;
-  padding-bottom: 137px;
-  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/mobile/servise-mobile@1x.webp);
-  background-repeat: no-repeat;
-  background-position: center;
+  padding-top: 551px;
+  background: var(--black-fon, #101010);
+  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), -webkit-image-set(url("../../../img/deckstop/portfolio-deckstop@1x.webp") 1x, url("../../../img/deckstop/portfolio-deckstop@2x.webp") 2x);
+  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), image-set(url("../../../img/deckstop/portfolio-deckstop@1x.webp") 1x, url("../../../img/deckstop/portfolio-deckstop@2x.webp") 2x);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .portfolio {
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/mobile/servise-mobile@2x.webp);
-  }
+
+.information {
+  padding-top: 108px;
+  padding-bottom: 200px;
 }
-@media screen and (min-width: 724px) {
-  .portfolio {
-    padding-top: 32px;
-    padding-bottom: 178px;
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/tablet/servise-tablet@1x.webp);
-  }
-}
-@media screen and (min-width: 724px) and (min-device-pixel-ratio: 2), screen and (min-width: 724px) and (min-resolution: 192dpi), screen and (min-width: 724px) and (min-resolution: 2dppx) {
-  .portfolio {
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/tablet/servise-tablet@2x.webp);
-  }
-}
-@media screen and (min-width: 724px) and (min-width: 1380px) {
-  .portfolio {
-    padding-top: 247px;
-    padding-bottom: 240px;
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/deckstop/servise-deckstop@1x.webp);
-  }
-}
-@media screen and (min-width: 724px) and (min-width: 1380px) and (min-device-pixel-ratio: 2), screen and (min-width: 724px) and (min-width: 1380px) and (min-resolution: 192dpi), screen and (min-width: 724px) and (min-width: 1380px) and (min-resolution: 2dppx) {
-  .portfolio {
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/deckstop/servise-deckstop@2x.webp);
-  }
-}
-.portfolio__container {
+.information__container {
   position: relative;
 }
-.portfolio__form-input {
-  display: none;
-}
-@media screen and (min-width: 724px) {
-  .portfolio__form-input {
-    display: block;
-    width: 174px;
-    height: 40px;
-    border-radius: 4px;
-    outline: 1px solid #FDFDFD;
-    border: none;
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #979797;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 22px;
-    margin-left: auto;
-  }
-}
-@media screen and (min-width: 1380px) {
-  .portfolio__form-input {
-    display: none;
-  }
-}
-.portfolio__icon {
-  display: none;
-}
-@media screen and (min-width: 724px) {
-  .portfolio__icon {
-    display: block;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 7px;
-    right: 15px;
-  }
-}
-@media screen and (min-width: 724px) and (min-width: 1380px) {
-  .portfolio__icon {
-    display: none;
-  }
-}
-.portfolio__svg {
-  display: none;
-}
-@media screen and (min-width: 724px) {
-  .portfolio__svg {
-    display: block;
-    fill: #FDFDFD;
-  }
-}
-.portfolio__title {
-  color: var(--white-fon, #f8f1e9);
+.information__title {
+  color: var(--gold-text, #a76e00);
   font-family: "Montserrat Alternates";
-  font-size: 40px;
+  font-size: 56px;
   font-style: normal;
   font-weight: 500;
-  line-height: 48px;
-  max-width: 165px;
+  line-height: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 722px;
+  position: relative;
+  z-index: 2;
+}
+.information__text {
+  color: var(--black-text, #3d3c39);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  max-width: 1136px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+.information__btn {
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  border-bottom: 1px solid var(--black-text, #3d3c39);
+  background: var(--white-text, #fdfdfd);
+  width: 240px;
+  height: 42px;
+  color: var(--green-text, #04867e);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 724px) {
-  .portfolio__title {
-    font-size: 56px;
-    line-height: 64px;
-    max-width: 232px;
-    margin-top: 36px;
-  }
+.information__img {
+  width: 1440px;
+  height: 188px;
+  position: absolute;
+  top: -54px;
+  left: -10px;
 }
-@media screen and (min-width: 1380px) {
-  .portfolio__title {
-    margin-top: 0;
-  }
+
+.searchi {
+  padding-top: 247px;
+  padding-bottom: 240px;
+  background: var(--black-fon, #101010);
+  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), -webkit-image-set(url("../../../img/deckstop/search-deckstop@1x.webp") 1x, url("../../../img/deckstop/search-deckstop@1x.webp") 2x);
+  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), image-set(url("../../../img/deckstop/search-deckstop@1x.webp") 1x, url("../../../img/deckstop/search-deckstop@1x.webp") 2x);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.searchi__title {
+  color: var(--white-fon, #f8f1e9);
+  font-family: "Montserrat Alternates";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 64px;
+  max-width: 654px;
+  margin-right: auto;
+  margin-left: auto;
 }/*# sourceMappingURL=main.css.map */

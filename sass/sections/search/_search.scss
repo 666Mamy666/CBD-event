@@ -1,0 +1,27 @@
+@use "../../base/var" as *;
+.searchi {
+  padding-top: 247px;
+  padding-bottom: 240px;
+  background: var(--black-fon, #101010);
+  background-image: linear-gradient($gradient, $gradient),
+   image-set(
+    url("../../../img/deckstop/search-deckstop@1x.webp") 1x,
+    url("../../../img/deckstop/search-deckstop@1x.webp") 2x
+  );
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__title {
+    color: var(--white-fon, #f8f1e9);
+    font-family: "Montserrat Alternates";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px;
+    max-width: 654.0px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

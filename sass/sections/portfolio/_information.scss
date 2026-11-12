@@ -1,129 +1,61 @@
-@use "../../base/var" as *;
-.portfolio {
-  padding-top: 48px;
-  padding-bottom: 137px;
-  background-image:
-    linear-gradient($gradient, $gradient),
-    url(../../../img/mobile/servise-mobile@1x.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image:
-      linear-gradient($gradient, $gradient),
-      url(../../../img/mobile/servise-mobile@2x.webp);
-  }
-
-  @media screen and (min-width: 724px) {
-    padding-top: 32px;
-    padding-bottom: 178px;
-
-    background-image:
-      linear-gradient($gradient, $gradient),
-      url(../../../img/tablet/servise-tablet@1x.webp);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image:
-        linear-gradient($gradient, $gradient),
-        url(../../../img/tablet/servise-tablet@2x.webp);
-    }
-
-    @media screen and (min-width: 1380px) {
-      padding-top: 247px;
-      padding-bottom: 240px;
-
-      background-image:
-        linear-gradient($gradient, $gradient),
-        url(../../../img/deckstop/servise-deckstop@1x.webp);
-
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image:
-          linear-gradient($gradient, $gradient),
-          url(../../../img/deckstop/servise-deckstop@2x.webp);
-      }
-    }
-  }
+.information {
+  padding-top: 108px;
+  padding-bottom: 200px;
 
   &__container {
     position: relative;
   }
-
-  &__form-input {
-    display: none;
-
-    @media screen and (min-width: 724px) {
-      display: block;
-      width: 174px;
-      height: 40px;
-      border-radius: 4px;
-      outline: 1px solid $svg-color;
-      border: none;
-      background-color: transparent;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      color: $background-color;
-      font-family: Montserrat;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 22px;
-      margin-left: auto;
-    }
-    @media screen and (min-width: 1380px) {
-      display: none;
-    }
-  }
-  &__icon {
-    display: none;
-
-    @media screen and (min-width: 724px) {
-      display: block;
-      width: 24px;
-      height: 24px;
-      position: absolute;
-      top: 7px;
-      right: 15px;
-
-      @media screen and (min-width: 1380px) {
-        display: none;
-      }
-    }
-  }
-  &__svg {
-    display: none;
-
-    @media screen and (min-width: 724px) {
-      display: block;
-      fill: $svg-color;
-    }
-  }
   &__title {
-    color: var(--white-fon, #f8f1e9);
+    color: var(--gold-text, #a76e00);
     font-family: "Montserrat Alternates";
-    font-size: 40px;
+    font-size: 56px;
     font-style: normal;
     font-weight: 500;
-    line-height: 48px;
-    max-width: 165px;
+    line-height: 64px;
     margin-left: auto;
     margin-right: auto;
-
-    @media screen and (min-width: 724px) {
-      font-size: 56px;
-      line-height: 64px;
-      max-width: 232px;
-      margin-top: 36px;
-    }
-    @media screen and (min-width: 1380px) {
-        margin-top: 0;
-    }
+    max-width: 722px;
+    position: relative;
+    z-index: 2;
+  }
+  &__text {
+    color: var(--black-text, #3d3c39);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 1136px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 40px;
+  }
+  &__btn {
+    display: flex;
+    padding: 10px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    border-bottom: 1px solid var(--black-text, #3d3c39);
+    background: var(--white-text, #fdfdfd);
+    width: 240px;
+    height: 42px;
+    color: var(--green-text, #04867e);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__img {
+    width: 1440px;
+    height: 188px;
+    position: absolute;
+    top: -54px;
+    left: -10px;
   }
 }
