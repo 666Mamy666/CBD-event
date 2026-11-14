@@ -3,7 +3,6 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
-
   @media screen and (min-width: 724px) {
     padding-top: 9px;
     padding-bottom: 8px;
@@ -31,6 +30,8 @@
     font-style: normal;
     font-weight: 800;
     line-height: 48px;
+    animation-name: move-logo;
+    animation-duration: 1.5s;
 
     @media screen and (min-width: 724px) {
       font-size: 56px;
@@ -38,26 +39,25 @@
     }
   }
   &__container {
-
     @media screen and (min-width: 1380px) {
-        display: flex;
+      display: flex;
       flex-direction: column;
     }
   }
   &__wrapper {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
 
-  @media screen and (min-width: 724px) {
-    gap: 32px;
-  }
+    @media screen and (min-width: 724px) {
+      gap: 32px;
+    }
 
-  @media screen and (min-width: 1380px) {
-    gap: 131px;
-    margin-bottom: 37px;
+    @media screen and (min-width: 1380px) {
+      gap: 131px;
+      margin-bottom: 37px;
+    }
   }
-}
   &__group {
     display: none;
 
@@ -98,12 +98,28 @@
     line-height: 18px;
     display: block;
 
+    &:hover,
+    &:focus {
+      color: $svg-color;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
     @media screen and (min-width: 724px) {
       display: none;
     }
   }
   &__text {
     display: none;
+
+    &:hover,
+    &:focus {
+      color: $svg-color;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
     @media screen and (min-width: 724px) {
       color: $decorative-color;
@@ -140,7 +156,20 @@
     font-style: normal;
     font-weight: 700;
     line-height: 22px;
+
+    &.current::after {
+      animation: underline-slide 250ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    }
+
+    &:hover,
+    &:focus {
+      color: $svg-color;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
+
   &__form-input {
     color: $background-color;
     font-family: Montserrat;
@@ -189,4 +218,18 @@
   &__svg {
     stroke: $decorative-color;
   }
+}
+
+@keyframes move-logo {
+  0% {
+    transform: translate(0, -100px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.current {
+  color: $svg-color;
 }
