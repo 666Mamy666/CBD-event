@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="CBD — професійне планування заходів, конференцій, зустрічей та корпоративних подій. Повний комплекс послуг з організації заходів.">
+    <title>Послуги з організації заходів | CBD Meetings</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
         integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,8 +15,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/main.min.css">
+
 </head>
 
 <body>
@@ -59,33 +61,53 @@
                             <ul class="header__nav-list">
                                 <li class="header__nav-item"><a class="header__link" href="./about.html">Про нас</a>
                                 </li>
-                                <li class="header__nav-item"><a class="header__link current" href="./services.html">Сервіси</a>
+                                <li class="header__nav-item"><a class="header__link current"
+                                        href="./services.html">Сервіси</a>
                                 </li>
-                                <li class="header__nav-item"><a class="header__link" href="./portfolio.html">Портфоліо</a></li>
+                                <li class="header__nav-item"><a class="header__link"
+                                        href="./portfolio.html">Портфоліо</a></li>
                                 <li class="header__nav-item"><a class="header__link" href="#response">Клієнти</a></li>
                                 <li class="header__nav-item"><a class="header__link" href="#prices">Магазин</a></li>
-                                <li class="header__nav-item"><a class="header__link" href="">Контакти</a></li>
-                                <li class="header__nav-item"><a class="header__link" href="">Вартість</a></li>
-                                <li class="header__nav-item"><a class="header__link" href="">Події</a></li>
+                                <li class="header__nav-item"><a class="header__link" href="#footer">Контакти</a></li>
+                                <li class="header__nav-item"><a class="header__link" href="#prices">Вартість</a></li>
+                                <li class="header__nav-item"><a class="header__link" href="#events">Події</a></li>
                             </ul>
                         </nav>
-
                         <form class="header__form" action="#" method="get" role="search">
                             <input class="header__form-input" type="search" id="search-input" name="query"
                                 placeholder="Пошук" autocomplete="off" required>
-                        <a href="./search.html">
-                            <svg class="header__form-icon" aria-hidden="true">
-                                <use class="header__form-svg" href="./img/symbol-defs.svg#icon-search"></use>
-                            </svg>
-                        </a>
+                            <a href="./search.html">
+                                <svg class="header__form-icon" aria-hidden="true">
+                                    <use class="header__form-svg" href="./img/symbol-defs.svg#icon-search"></use>
+                                </svg>
+                            </a>
                         </form>
                     </div>
                 </div>
-                <button class="header__btn" type="button">
-                    <svg class="header__icon">
+                <button class="header__btn" data-menu-open type="button" aria-label="Відкрити меню">
+                    <svg class="header__icon" aria-hidden="true">
                         <use class="header__svg" href="./img/symbol-defs.svg#icon-menu"></use>
                     </svg>
                 </button>
+                <div class="menu is-hidden" data-menu>
+                    <nav class="menu__nav">
+                        <ul class="menu__nav-list">
+                            <li class="menu__nav-item"><a class="menu__link" href="./about.html">Про нас</a></li>
+                            <li class="menu__nav-item"><a class="menu__link" href="./services.html">Сервіси</a></li>
+                            <li class="menu__nav-item"><a class="menu__link" href="./portfolio.html">Портфоліо</a></li>
+                            <li class="menu__nav-item"><a class="menu__link" href="">Клієнти</a></li>
+                            <li class="menu__nav-item"><a class="menu__link" href="">Магазин</a></li>
+                            <li class="menu__nav-item"><a class="menu__link" href="">Контакти</a></li>
+                            <li class="menu__nav-item"><a class="menu__link" href="">Вартість</a></li>
+                            <li class="menu__nav-item"><a class="menu__link" href="">Події</a></li>
+                        </ul>
+                        <button class="menu__btn" data-menu-close type="button" aria-label="Закрити меню">
+                            <svg aria-hidden="true">
+                                <use href="./img/symbol-defs.svg#icon-cancel"></use>
+                            </svg>
+                        </button>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -133,7 +155,8 @@
                     ./img/mobile/opportunities-mobile@1x.webp 1x,
                     ./img/mobile/opportunities-mobile@2x.webp 2x
                 ">
-                        <img class="opportunities__image" src="./img/mobile/opportunities-mobile@1x.webp" alt="card">
+                        <img loading="lazy" class="opportunities__image" src="./img/mobile/opportunities-mobile@1x.webp"
+                            alt="card">
                     </picture>
                 </div>
                 <p class="opportunities__text">
@@ -178,7 +201,7 @@
                                         ./img/mobile/do-mobile@1x.webp 1x,
                                         ./img/mobile/do-mobile@2x.webp 2x
                                     ">
-                    <img class="do__image" src="./img/mobile/do-mobile@1x.webp" alt="card">
+                    <img loading="lazy" class="do__image" src="./img/mobile/do-mobile@1x.webp" alt="card">
                 </picture>
             </div>
         </section>
@@ -200,7 +223,7 @@
                                                                             ./img/mobile/cards-mobile@1x.webp 1x,
                                                                             ./img/mobile/cards-mobile@2x.webp 2x
                                                                         ">
-                        <img class="cards__image" src="./img/mobile/cards-mobile@1x.webp" alt="card">
+                        <img loading="lazy" class="cards__image" src="./img/mobile/cards-mobile@1x.webp" alt="card">
                     </picture>
                 </div>
                 <ul class="cards__list">
@@ -338,7 +361,8 @@
                                         ./img/mobile/grandfather-mobile@1x.webp 1x,
                                         ./img/mobile/grandfather-mobile@2x.webp 2x
                                     ">
-                            <img class="response__image" src="./img/mobile/grandfather-mobile@1x.webp" alt="Грегорі">
+                            <img loading="lazy" class="response__image" src="./img/mobile/grandfather-mobile@1x.webp"
+                                alt="Грегорі">
                         </picture>
                         <div class="response__content">
                             <p class="response__text">
@@ -380,7 +404,8 @@
                                         ./img/mobile/man-mobile@1x.webp 1x,
                                         ./img/mobile/man-mobile@2x.webp 2x
                                     ">
-                            <img class="response__image" src="./img/mobile/man-mobile@1x.webp" alt="Грегорі">
+                            <img loading="lazy" class="response__image" src="./img/mobile/man-mobile@1x.webp"
+                                alt="Грегорі">
                         </picture>
                     </li>
                 </ul>
@@ -400,7 +425,8 @@
                                                     ./img/mobile/line-mobile@1x.webp 1x,
                                                     ./img/mobile/line-mobile@2x.webp 2x
                                                 ">
-                    <img class="response__picture" src="./img/deckstop/line-deckstop@1x.webp" alt="Грегорі">
+                    <img loading="lazy" class="response__picture" src="./img/deckstop/line-deckstop@1x.webp"
+                        alt="Грегорі">
                 </picture>
                 <picture class="response__img">
                     <source media="(min-width: 1380px)" srcset="
@@ -430,7 +456,7 @@
                                                                             ./img/mobile/moon-mobile@1x.webp 1x,
                                                                             ./img/mobile/moon-mobile@2x.webp 2x
                                                                         ">
-                    <img class="response__photo" src="./img/tablet/moon-tablet@1x.webp" alt="Грегорі">
+                    <img loading="lazy" class="response__photo" src="./img/tablet/moon-tablet@1x.webp" alt="Грегорі">
                 </picture>
             </div>
         </section>
@@ -579,7 +605,7 @@
                                                     ./img/mobile/price-mobile@1x.webp 1x,
                                                     ./img/mobile/price-mobile@2x.webp 2x
                                                 ">
-                    <img class="prices__image" src="./img/mobile/price-mobile@1x.webp" alt="Грегорі">
+                    <img loading="lazy" class="prices__image" src="./img/mobile/price-mobile@1x.webp" alt="Грегорі">
                 </picture>
             </div>
         </section>
@@ -659,7 +685,8 @@
                                     <span class="footer__span">+1 404-806-0153</span> </a>
                             </li>
                             <li>
-                                <a href="#" class="footer__text"><span class="footer__span">info@cbdmeetings.com</span></a>
+                                <a href="#" class="footer__text"><span
+                                        class="footer__span">info@cbdmeetings.com</span></a>
                             </li>
                             <li>
                                 <ul class="footer__svg-list">
@@ -769,10 +796,10 @@
                                             </svg>
                                         </li>
                                     </ul>
-    
+
                                 </li>
                             </ul>
-    
+
                         </div>
                         <p class="footer__text footer__text-tablet">
                             NAICS Коди: <br>

@@ -62,11 +62,11 @@
                                 <li class="header__nav-item"><a class="header__link" href="./services.html">Сервіси</a>
                                 </li>
                                 <li class="header__nav-item"><a class="header__link current" href="./portfolio.html">Портфоліо</a></li>
-                                <li class="header__nav-item"><a class="header__link" href="">Клієнти</a></li>
-                                <li class="header__nav-item"><a class="header__link" href="">Магазин</a></li>
-                                <li class="header__nav-item"><a class="header__link" href="">Контакти</a></li>
-                                <li class="header__nav-item"><a class="header__link" href="">Вартість</a></li>
-                                <li class="header__nav-item"><a class="header__link" href="">Події</a></li>
+                                <li class="header__nav-item"><a class="header__link" href="#response">Клієнти</a></li>
+                                <li class="header__nav-item"><a class="header__link" href="#prices">Магазин</a></li>
+                                <li class="header__nav-item"><a class="header__link" href="#footer">Контакти</a></li>
+                                <li class="header__nav-item"><a class="header__link" href="#prices">Вартість</a></li>
+                                <li class="header__nav-item"><a class="header__link" href="#events">Події</a></li>
                             </ul>
                         </nav>
 
@@ -81,11 +81,30 @@
                         </form>
                     </div>
                 </div>
-                <button class="header__btn" type="button">
+                <button class="header__btn" data-menu-open type="button">
                     <svg class="header__icon">
                         <use class="header__svg" href="./img/symbol-defs.svg#icon-menu"></use>
                     </svg>
                 </button>
+                <div class="menu is-hidden" data-menu>
+                    <nav class="menu__nav">
+                        <ul class="menu__nav-list">
+                            <li class="menu__nav-item"><a class="menu__link" href="./about.html">Про нас</a></li>
+                            <li class="menu__nav-item"><a class="menu__link" href="./services.html">Сервіси</a></li>
+                            <li class="menu__nav-item"><a class="menu__link" href="./portfolio.html">Портфоліо</a></li>
+                            <li class="menu__nav-item"><a class="menu__link" href="">Клієнти</a></li>
+                            <li class="menu__nav-item"><a class="menu__link" href="">Магазин</a></li>
+                            <li class="menu__nav-item"><a class="menu__link" href="">Контакти</a></li>
+                            <li class="menu__nav-item"><a class="menu__link" href="">Вартість</a></li>
+                            <li class="menu__nav-item"><a class="menu__link" href="">Події</a></li>
+                        </ul>
+                        <button class="menu__btn" data-menu-close type="button">
+                            <svg>
+                                <use href="./img/symbol-defs.svg#icon-cancel"></use>
+                            </svg>
+                        </button>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>

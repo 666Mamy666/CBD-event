@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -29,7 +33,6 @@ img {
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 363px) {
   .container {
@@ -6013,4 +6016,47 @@ img {
   font-style: normal;
   font-weight: 700;
   line-height: 22px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  opacity: 1;
+}
+.menu__nav {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  padding: 50px;
+  position: relative;
+}
+.menu__nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.menu__btn {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */
