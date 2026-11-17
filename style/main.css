@@ -304,31 +304,31 @@ img {
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/mobile/cdd-mobile@2x.webp);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(./img/mobile/cdd-mobile@2x.webp);
   }
 }
 @media screen and (min-width: 724px) {
   .hero {
     padding-top: 32px;
     padding-bottom: 80px;
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/tablet/cbd-tablet@1x.webp);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/tablet/cbd-tablet@1x.webp);
   }
 }
 @media screen and (min-width: 724px) and (min-device-pixel-ratio: 2), screen and (min-width: 724px) and (min-resolution: 192dpi), screen and (min-width: 724px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/tablet/cbd-tablet@2x.webp);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/tablet/cbd-tablet@2x.webp);
   }
 }
 @media screen and (min-width: 724px) and (min-width: 1380px) {
   .hero {
     padding-top: 262px;
     padding-bottom: 278px;
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/deckstop/cbd-deckstop@1x.webp);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/deckstop/cbd-deckstop@1x.webp);
   }
 }
 @media screen and (min-width: 724px) and (min-width: 1380px) and (min-device-pixel-ratio: 2), screen and (min-width: 724px) and (min-width: 1380px) and (min-resolution: 192dpi), screen and (min-width: 724px) and (min-width: 1380px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/deckstop/cbd-deckstop@2x.webp);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/deckstop/cbd-deckstop@2x.webp);
   }
 }
 .hero__container {
@@ -2758,26 +2758,26 @@ img {
 .why {
   padding-top: 48px;
   padding-bottom: 24px;
-  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/mobile/hero-mobile@1x.webp);
+  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/mobile/hero-mobile@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .why {
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/mobile/hero-mobile@2x.webp);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/mobile/hero-mobile@2x.webp);
   }
 }
 @media screen and (min-width: 724px) {
   .why {
     padding-top: 31px;
     padding-bottom: 80px;
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/tablet/hero-tablet@1x.webp);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/tablet/hero-tablet@1x.webp);
   }
 }
 @media screen and (min-width: 724px) and (min-device-pixel-ratio: 2), screen and (min-width: 724px) and (min-resolution: 192dpi), screen and (min-width: 724px) and (min-resolution: 2dppx) {
   .why {
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/tablet/hero-tablet@2x.webp);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/tablet/hero-tablet@2x.webp);
   }
 }
 @media screen and (min-width: 724px) and (min-width: 1380px) {
@@ -4381,38 +4381,38 @@ img {
 .servise {
   padding-top: 48px;
   padding-bottom: 137px;
-  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/mobile/servise-mobile@1x.webp);
+  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/mobile/servise-mobile@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .servise {
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/mobile/servise-mobile@2x.webp);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/mobile/servise-mobile@2x.webp);
   }
 }
 @media screen and (min-width: 724px) {
   .servise {
     padding-top: 32px;
     padding-bottom: 178px;
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/tablet/servise-tablet@1x.webp);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/tablet/servise-tablet@1x.webp);
   }
 }
 @media screen and (min-width: 724px) and (min-device-pixel-ratio: 2), screen and (min-width: 724px) and (min-resolution: 192dpi), screen and (min-width: 724px) and (min-resolution: 2dppx) {
   .servise {
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/tablet/servise-tablet@2x.webp);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/tablet/servise-tablet@2x.webp);
   }
 }
 @media screen and (min-width: 724px) and (min-width: 1380px) {
   .servise {
     padding-top: 247px;
     padding-bottom: 240px;
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/deckstop/servise-deckstop@1x.webp);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/deckstop/servise-deckstop@1x.webp);
   }
 }
 @media screen and (min-width: 724px) and (min-width: 1380px) and (min-device-pixel-ratio: 2), screen and (min-width: 724px) and (min-width: 1380px) and (min-resolution: 192dpi), screen and (min-width: 724px) and (min-width: 1380px) and (min-resolution: 2dppx) {
   .servise {
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/deckstop/servise-deckstop@2x.webp);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/deckstop/servise-deckstop@2x.webp);
   }
 }
 .servise__container {
@@ -5724,8 +5724,8 @@ img {
 .portfolio {
   padding-top: 551px;
   background: var(--black-fon, #101010);
-  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), -webkit-image-set(url("../../../img/deckstop/portfolio-deckstop@1x.webp") 1x, url("../../../img/deckstop/portfolio-deckstop@2x.webp") 2x);
-  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), image-set(url("../../../img/deckstop/portfolio-deckstop@1x.webp") 1x, url("../../../img/deckstop/portfolio-deckstop@2x.webp") 2x);
+  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), -webkit-image-set(url("../img/deckstop/portfolio-deckstop@1x.webp") 1x, url("../img/deckstop/portfolio-deckstop@2x.webp") 2x);
+  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), image-set(url("../img/deckstop/portfolio-deckstop@1x.webp") 1x, url("../img/deckstop/portfolio-deckstop@2x.webp") 2x);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -5796,8 +5796,8 @@ img {
   padding-top: 247px;
   padding-bottom: 240px;
   background: var(--black-fon, #101010);
-  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), -webkit-image-set(url("../../../img/deckstop/search-deckstop@1x.webp") 1x, url("../../../img/deckstop/search-deckstop@1x.webp") 2x);
-  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), image-set(url("../../../img/deckstop/search-deckstop@1x.webp") 1x, url("../../../img/deckstop/search-deckstop@1x.webp") 2x);
+  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), -webkit-image-set(url("../img/deckstop/search-deckstop@1x.webp") 1x, url("../img/deckstop/search-deckstop@1x.webp") 2x);
+  background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), image-set(url("../img/deckstop/search-deckstop@1x.webp") 1x, url("../img/deckstop/search-deckstop@1x.webp") 2x);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

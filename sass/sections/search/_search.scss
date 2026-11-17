@@ -5,8 +5,8 @@
   background: var(--black-fon, #101010);
   background-image: linear-gradient($gradient, $gradient),
    image-set(
-    url("../../../img/deckstop/search-deckstop@1x.webp") 1x,
-    url("../../../img/deckstop/search-deckstop@1x.webp") 2x
+    url("../img/deckstop/search-deckstop@1x.webp") 1x,
+    url("../img/deckstop/search-deckstop@1x.webp") 2x
   );
 
   background-size: cover;

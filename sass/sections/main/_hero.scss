@@ -13,7 +13,7 @@
     (min-resolution: 2dppx) {
     background-image:
       linear-gradient($gradient, $gradient),
-      url(../../../img/mobile/cdd-mobile@2x.webp);
+      url(./img/mobile/cdd-mobile@2x.webp);
   }
 
   @media screen and (min-width: 724px) {
@@ -22,14 +22,14 @@
 
     background-image:
       linear-gradient($gradient, $gradient),
-      url(../../../img/tablet/cbd-tablet@1x.webp);
+      url(../img/tablet/cbd-tablet@1x.webp);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image:
         linear-gradient($gradient, $gradient),
-        url(../../../img/tablet/cbd-tablet@2x.webp);
+        url(../img/tablet/cbd-tablet@2x.webp);
     }
 
     @media screen and (min-width: 1380px) {
@@ -38,14 +38,14 @@
 
       background-image:
         linear-gradient($gradient, $gradient),
-        url(../../../img/deckstop/cbd-deckstop@1x.webp);
+        url(../img/deckstop/cbd-deckstop@1x.webp);
 
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image:
           linear-gradient($gradient, $gradient),
-          url(../../../img/deckstop/cbd-deckstop@2x.webp);
+          url(../img/deckstop/cbd-deckstop@2x.webp);
       }
     }
   }
