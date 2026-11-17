@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CBD Meetings & Events | Corporate Events</title>
+    <meta name="description"
+        content="CBD Meetings & Events — professional corporate event planning, meeting management and event design in Washington, DC.">
+    <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
         integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100..900&family=Nunito:wght@200..1000&family=Roboto+Condensed:wght@100..900&display=swap"
         rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/main.min.css">
 </head>
 
@@ -61,7 +63,8 @@
                                 </li>
                                 <li class="header__nav-item"><a class="header__link" href="./services.html">Сервіси</a>
                                 </li>
-                                <li class="header__nav-item"><a class="header__link" href="./portfolio.html">Портфоліо</a></li>
+                                <li class="header__nav-item"><a class="header__link"
+                                        href="./portfolio.html">Портфоліо</a></li>
                                 <li class="header__nav-item"><a class="header__link" href="#response">Клієнти</a></li>
                                 <li class="header__nav-item"><a class="header__link" href="#prices">Магазин</a></li>
                                 <li class="header__nav-item"><a class="header__link" href="#footer">Контакти</a></li>
@@ -80,12 +83,13 @@
                         </form>
                     </div>
                 </div>
-                <button class="header__btn" data-menu-open type="button">
+                <button class="header__btn" data-menu-open type="button" aria-label="Відкрити меню"
+                    aria-expanded="false">
                     <svg class="header__icon">
                         <use class="header__svg" href="./img/symbol-defs.svg#icon-menu"></use>
                     </svg>
                 </button>
-                <div class="menu is-hidden" data-menu >
+                <div class="menu is-hidden" data-menu>
                     <nav class="menu__nav">
                         <ul class="menu__nav-list">
                             <li class="menu__nav-item"><a class="menu__link" href="./about.html">Про нас</a></li>
@@ -97,8 +101,9 @@
                             <li class="menu__nav-item"><a class="menu__link" href="">Вартість</a></li>
                             <li class="menu__nav-item"><a class="menu__link" href="">Події</a></li>
                         </ul>
-                        <button class="menu__btn" data-menu-close type="button">
-                            <svg>
+                        <button class="menu__btn" data-menu-close type="button" data-menu-close type="button"
+                            aria-label="Закрити меню">
+                            <svg class="menu__icon">
                                 <use href="./img/symbol-defs.svg#icon-cancel"></use>
                             </svg>
                         </button>
@@ -114,8 +119,8 @@
                     <form class="hero__form" action="#" method="get" role="search">
                         <input class="hero__form-input" type="search" id="search-input" name="query" placeholder="Пошук"
                             autocomplete="off" required>
-                        <svg class="header__form-icon" aria-hidden="true">
-                            <use class="header__form-svg" href="./img/symbol-defs.svg#icon-search"></use>
+                        <svg class="hero__form-icon" aria-hidden="true">
+                            <use class="hero__form-svg" href="./img/symbol-defs.svg#icon-search"></use>
                         </svg>
                     </form>
                     <h2 class="hero__titlle">#1 Організатор корпоративних заходів</h2>
@@ -167,7 +172,8 @@
                                   ./img/mobile/about-img-mobile@1x.webp 1x,
                                   ./img/mobile/about-img-mobile@2x.webp 2x
                                 ">
-                                    <img class="about__img" src="./img/mobile/about-img-mobile@1x.webp" alt="салют">
+                                    <img class="about__img" src="./img/mobile/about-img-mobile@1x.webp" width="604"
+                                        height="432" alt="салют" loading="lazy" decoding="async">
                                 </picture>
                                 <div class="about__tablet">
                                     <button class="about__btn" type="button">Чат</button>
@@ -246,7 +252,7 @@
                                 <p class="protocol__subtext">Пошук талантів</p>
                             </li>
                         </ul>
-                        <button class="protocol__btn" type="button">
+                        <button class="protocol__btn" type="button" aria-label="Читати більше">
                             <svg class="protocol__icon">
                                 <use class="protocol__svg" href="./img/symbol-defs.svg#icon-arrow"></use>
                             </svg>
@@ -286,7 +292,7 @@
                                 <p class="protocol__subtext">Зв’язок з постачальниками</p>
                             </li>
                         </ul>
-                        <button class="protocol__btn" type="button">
+                        <button class="protocol__btn" type="button" aria-label="Читати більше">
                             <svg class="protocol__icon">
                                 <use class="protocol__svg" href="./img/symbol-defs.svg#icon-arrow"></use>
                             </svg>
@@ -326,7 +332,7 @@
                                 <p class="protocol__subtext">Відеозйомка</p>
                             </li>
                         </ul>
-                        <button class="protocol__btn" type="button">
+                        <button class="protocol__btn" type="button" aria-label="Читати більше">
                             <svg class="protocol__icon">
                                 <use class="protocol__svg" href="./img/symbol-defs.svg#icon-arrow"></use>
                             </svg>
@@ -363,7 +369,7 @@
                                 <p class="protocol__subtext">Стратегічний менеджмент</p>
                             </li>
                         </ul>
-                        <button class="protocol__btn" type="button">
+                        <button class="protocol__btn" type="button" aria-label="Читати більше">
                             <svg class="protocol__icon">
                                 <use class="protocol__svg" href="./img/symbol-defs.svg#icon-arrow"></use>
                             </svg>
@@ -381,7 +387,8 @@
                                   ./img/tablet/protocol-img-tablet@2x.webp 2x
                                 ">
 
-                    <img class="protocol__img" src="./img/tablet/protocol-img-tablet@1x.webp" alt="moon">
+                    <img class="protocol__img" src="./img/tablet/protocol-img-tablet@1x.webp" width="350" height="250"
+                        alt="moon" loading="lazy" decoding="async">
                 </picture>
             </div>
         </section>
@@ -408,7 +415,8 @@
                                           ./img/mobile/candle-mobile@1x.webp 1x,
                                           ./img/mobile/candle-mobile@2x.webp 2x
                                         ">
-                            <img class="concepts__img-one" src="./img/mobile/candle-mobile@1x.webp" alt="салют">
+                            <img class="concepts__img-one" src="./img/mobile/candle-mobile@1x.webp" width="350"
+                                height="250" alt="салют" loading="lazy" decoding="async">
                         </picture>
 
                         <picture class="concepts__image">
@@ -426,7 +434,8 @@
                                           ./img/mobile/table-mobile@1x.webp 1x,
                                           ./img/mobile/table-mobile@2x.webp 2x
                                         ">
-                            <img class="concepts__img-two" src="./img/mobile/table-mobile@1x.webp" alt="table">
+                            <img class="concepts__img-two" src="./img/mobile/table-mobile@1x.webp" width="350"
+                                height="250" alt="table" loading="lazy" decoding="async">
                         </picture>
                     </li>
                     <li class="concepts__right">
@@ -445,7 +454,8 @@
                                           ./img/mobile/flowers-mobile@1x.webp 1x,
                                           ./img/mobile/flowers-mobile@2x.webp 2x
                                         ">
-                            <img class="concepts__img-thre" src="./img/mobile/flowers-mobile@1x.webp" alt="салют">
+                            <img class="concepts__img-thre" src="./img/mobile/flowers-mobile@1x.webp" width="350"
+                                height="250" alt="салют" loading="lazy" decoding="async">
                         </picture>
                     </li>
                 </ul>
@@ -510,7 +520,8 @@
                                                           ./img/mobile/favor-mobil@1x.webp 1x,
                                                           ./img/mobile/favor-mobil@2x.webp 2x
                                                         ">
-                    <img class="favor__img" src="./img/mobile/favor-mobil@1x.webp" alt="idk">
+                    <img class="favor__img" src="./img/mobile/favor-mobil@1x.webp" width="350" height="250" alt="idk"
+                        loading="lazy" decoding="async">
                 </picture>
             </div>
         </section>
@@ -538,7 +549,8 @@
                                                           ./img/mobile/events-img-mobile@1x.webp 1x,
                                                           ./img/mobile/events-img-mobile@2x.webp 2x
                                                         ">
-                        <img class="events__img" src="./img/mobile/events-img-mobile@1x.webp" alt="woman">
+                        <img class="events__img" src="./img/mobile/events-img-mobile@1x.webp" width="350" height="250"
+                            alt="woman" loading="lazy" decoding="async">
                     </picture>
                     <div>
                         <h4 class="events__caption-mobile">Використовуємо найсучасніший дизайн</h4>
@@ -578,7 +590,8 @@
                                                           ./img/mobile/video-mobile@1x.webp 1x,
                                                           ./img/mobile/video-mobile@2x.webp 2x
                                                         ">
-                        <img class="video__image" src=".//img/mobile/video-mobile@1x.webp" alt="woman">
+                        <img class="video__image" src=".//img/mobile/video-mobile@1x.webp" width="350" height="250"
+                            alt="woman" loading="lazy" decoding="async">
                     </picture>
                 </div>
                 <button class="video__btn" type="button">Ознайомитися</button>
@@ -593,7 +606,8 @@
                                   ./img/tablet/video-img-tablet@2x.webp 2x
                                 ">
 
-                    <img class="video__img" src="./img/tablet/video-img-tablet@1x.webp" alt="moon">
+                    <img class="video__img" src="./img/tablet/video-img-tablet@1x.webp" width="350" height="250"
+                        alt="moon" loading="lazy" decoding="async">
                 </picture>
             </div>
         </section>
@@ -621,7 +635,8 @@
                                                   ./img/mobile/salute-mobile@1x.webp 1x,
                                                   ./img/mobile/salute-mobile@2x.webp 2x
                                                 ">
-                            <img class="news__img" src="./img/mobile/salute-mobile@1x.webp" alt="salute">
+                            <img class="news__img" src="./img/mobile/salute-mobile@1x.webp" width="350" height="250"
+                                alt="salute" loading="lazy" decoding="async">
                         </picture>
                         <h4 class="news__text">Як планується захід</h4>
                     </li>
@@ -642,7 +657,8 @@
                                                   ./img/mobile/plate-mobile@1x.webp 1x,
                                                   ./img/mobile/plate-mobile@2x.webp 2x
                                                 ">
-                            <img class="news__img" src="./img/mobile/plate-mobile@1x.webp" alt="plate">
+                            <img class="news__img" src="./img/mobile/plate-mobile@1x.webp" width="350" height="250"
+                                alt="plate" loading="lazy" decoding="async">
                         </picture>
                         <h4 class="news__text">Інформація для пошуку організатора</h4>
                     </li>
@@ -663,7 +679,8 @@
                                                   ./img/mobile/card-mobile@1x.webp 1x,
                                                   ./img/mobile/card-mobile@2x.webp 2x
                                                 ">
-                            <img class="news__img news__img" src="./img/mobile/card-mobile@1x.webp" alt="card">
+                            <img class="news__img news__img" src="./img/mobile/card-mobile@1x.webp" width="350"
+                                height="250" alt="card" loading="lazy" decoding="async">
                         </picture>
                         <h4 class="news__text">Зустрічі та заходи. Брошура</h4>
                     </li>

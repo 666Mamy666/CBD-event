@@ -187,11 +187,16 @@
     background-color: transparent;
   }
   &__form-icon {
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    right: 10px;
-    bottom: 8px;
+    display: none;
+
+    @media screen and (min-width: 724px) {
+      display: block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      right: 10px;
+      bottom: 8px;
+    }
   }
   &__form-svg {
     fill: $svg-color;
