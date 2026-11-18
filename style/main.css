@@ -2784,12 +2784,12 @@ img {
   .why {
     padding-top: 239px;
     padding-bottom: 154px;
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/deckstop/hero-deckstop@1x.webp);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/deckstop/hero-deckstop@1x.webp);
   }
 }
 @media screen and (min-width: 724px) and (min-width: 1380px) and (min-device-pixel-ratio: 2), screen and (min-width: 724px) and (min-width: 1380px) and (min-resolution: 192dpi), screen and (min-width: 724px) and (min-width: 1380px) and (min-resolution: 2dppx) {
   .why {
-    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../../../img/deckstop/hero-deckstop@2x.webp);
+    background-image: linear-gradient(rgba(16, 16, 16, 0.8), rgba(16, 16, 16, 0.8)), url(../img/deckstop/hero-deckstop@2x.webp);
   }
 }
 .why__container {
